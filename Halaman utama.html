@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<meta charset="UTF-8">
 	<title>good place destination in Jawa</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +17,7 @@
        <li><a href="Di jawa timur.html">Di jawa timur</a></li>
 	    <li><a href="Di jawa tengah.html">Di jawa tengah</a></li>
 		 <li><a href="Di jawa barat.html">Di jawa barat</a></li>
-       <li><a href="Contact.html">Contact Us</a></li>
+       <li><a href="Contact.html">Contact </a></li>
     </ul>
 </nav>
 
@@ -24,6 +27,96 @@
 		<h1>good place destination in Jawa</h1>
 		<h4>dibawah ini salah satu tempat wisata indah di jawa timur,tengah, dan barat</h4>
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari tempat wisata..." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:100%;">list beberapa salah satu tempatnya</th>
+  </tr>
+  <tr>
+    <td><a href="Di jawa timur.html">1. Bromo</a></td>
+	
+  </tr>
+  <tr>
+    <td><a href="Di jawa timur.html">2. Kawah ijen</a></td>
+  </tr>
+  <tr>
+    <td><a href="Di jawa timur.html">3. Jatim park</a></td>
+  </tr>
+  <tr>
+    <td><a href="Di jawa tengah.html">4. Candi borobudur</a></td>
+  </tr>
+  <tr>
+    <td><a href="Di jawa tengah.html">5. Candi prambanan</a></td>
+  </tr>
+  <tr>
+    <td><a href="Di jawa tengah.html">6. Lawang sewu</a></td>
+  </tr>
+  <tr>
+    <td><a href="Di jawa barat.html">8. Kawah putih</a></td>
+  </tr>
+  <td><a href="Di jawa barat.html">9. Green canyon</a></td>
+  </tr>
+  <td><a href="Di jawa barat.html">10. Stone garden</a></td>
+  </tr>
+</table>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
 	
 	</div> <!--/ .header -->
 
@@ -37,7 +130,7 @@
 
 		<div class="middle">
 			<h3>2.yogya</h3>
-			<p>Salah satu kecamatan di Yogyakarta, yaitu Kotagede pernah menjadi pusat Kesultanan Mataram antara kurun tahun 1575–1640.Keraton (Istana) yang masih berfungsi dalam arti yang sesungguhnya adalah Keraton Ngayogyakarta dan Puro Paku Alaman, yang merupakan pecahan dari Kesultanan Mataram..</p>
+			<p>Salah satu kecamatan di Yogyakarta, yaitu Kotagede pernah menjadi pusat Kesultanan Mataram antara kurun tahun 1575â€“1640.Keraton (Istana) yang masih berfungsi dalam arti yang sesungguhnya adalah Keraton Ngayogyakarta dan Puro Paku Alaman, yang merupakan pecahan dari Kesultanan Mataram..</p>
 			<p><img src="yogya.jpg" height="500" width="500" </p>
 		</div> <!--/ .middle -->
 
